@@ -1,5 +1,8 @@
-package com.kineduchallenge.core.repository
+package com.kineduchallenge.core.module
 
+import com.kineduchallenge.core.repository.DataSource
+import com.kineduchallenge.core.repository.LocalDataSource
+import com.kineduchallenge.core.repository.RemoteDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

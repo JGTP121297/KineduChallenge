@@ -1,5 +1,6 @@
-package com.kineduchallenge.core.api
+package com.kineduchallenge.core.module
 
+import com.kineduchallenge.core.api.ApiInterface
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -16,7 +16,6 @@ class MainViewModel @Inject constructor(private val mRepository: Repository) : V
             val characters = mRepository.getListCharacters(true)
             println(characters)
         }
-        //
     }
 
 }

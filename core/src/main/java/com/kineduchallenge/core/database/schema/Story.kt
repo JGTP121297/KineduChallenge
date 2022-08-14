@@ -1,0 +1,36 @@
+package com.kineduchallenge.core.database.schema
+
+import com.google.gson.annotations.SerializedName
+import io.realm.RealmList
+import io.realm.RealmObject
+import io.realm.annotations.Index
+
+open class Story : RealmObject() {
+    @Index
+    @SerializedName("id")
+    var id: Int? = null
+
+    @SerializedName("title", alternate = ["name"])
+    var title: String? = null
+
+    @SerializedName("description")
+    var description: String? = null
+
+    /*@SerializedName("thumbnail")
+    var thumbnail: Thumbnail? = null
+
+    @SerializedName("comics")
+    var comics: RealmList<Comic>? = null
+
+    @SerializedName("series")
+    var series: RealmList<Series>? = null
+
+    @SerializedName("events")
+    var events: RealmList<Event>? = null
+
+    @SerializedName("characters")
+    var characters: RealmList<Character>? = null*/
+
+    @SerializedName("resourceURI")
+    var resourceURI: String? = null
+}

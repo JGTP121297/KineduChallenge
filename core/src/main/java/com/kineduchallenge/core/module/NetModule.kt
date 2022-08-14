@@ -1,5 +1,6 @@
-package com.kineduchallenge.core.api
+package com.kineduchallenge.core.module
 
+import com.google.gson.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,6 +15,16 @@ import java.util.concurrent.TimeUnit
 @Module
 @InstallIn(SingletonComponent::class)
 class NetModule {
+
+    @Provides
+    fun provideGson(): Gson =
+        GsonBuilder().setExclusionStrategies(object : ExclusionStrategy {
+            override fun shouldSkipField(f: FieldAttributes?): Boolean =
+                f?.name?.startsWith("io_realm_kotlin_") ?: false
+
+            override fun shouldSkipClass(clazz: Class<*>?): Boolean = false
+
+        }).create()
 
     @Provides
     fun provideInterceptor(): Interceptor {
@@ -32,10 +43,10 @@ class NetModule {
     }
 
     @Provides
-    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
+    fun provideRetrofit(gson: Gson, okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .baseUrl("https://gateway.marvel.com/v1/public/")
-            .addConverterFactory(GsonConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create(gson))
             .callFactory(okHttpClient)
             .build()
     }
