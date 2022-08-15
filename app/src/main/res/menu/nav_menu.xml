@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/characters"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="Characters" />
+
+    <item
+        android:id="@+id/comics"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="Comics" />
+
+    <item
+        android:id="@+id/series"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="Series" />
+
+    <item
+        android:id="@+id/stories"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="Stories" />
+
+    <item
+        android:id="@+id/events"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="Events" />
+
+</menu>

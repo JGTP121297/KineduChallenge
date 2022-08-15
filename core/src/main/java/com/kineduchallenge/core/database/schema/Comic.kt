@@ -13,15 +13,15 @@ open class Comic : RealmObject() {
     var id: Int? = null
 
     @SerializedName("title", alternate = ["name"])
-    var title: Int? = null
+    var title: String? = ""
 
     @SerializedName("description")
-    var description: Int? = null
+    var description: String? = ""
 
-    /*@SerializedName("thumbnail")
+    @SerializedName("thumbnail")
     var thumbnail: Thumbnail? = null
 
-    @SerializedName("characters")
+    /*@SerializedName("characters")
     var characters: RealmList<Character>? = null
 
     @SerializedName("stories")

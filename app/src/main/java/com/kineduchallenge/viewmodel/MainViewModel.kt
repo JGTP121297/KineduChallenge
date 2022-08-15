@@ -1,21 +1,19 @@
 package com.kineduchallenge.viewmodel
 
+import android.app.Application
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.kineduchallenge.core.repository.Repository
+import com.kineduchallenge.ui.events.UIEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(private val mRepository: Repository) : ViewModel() {
+class MainViewModel @Inject constructor(
+    private val mRepository: Repository,
+) : BaseViewModel(Application()) {
 
-    fun consultRepository() {
-        viewModelScope.launch(Dispatchers.IO) {
-            val characters = mRepository.getListCharacters(true)
-            println(characters)
-        }
-    }
+
 
 }

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text montserrat medium -->
+    <style name="Text.MontserratMedium" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/color_black_20</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark" parent="Text.MontserratMedium">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header1.Big" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_1_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header1.Big.Bold" parent="Text.MontserratMedium.Dark.Header1.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header1" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_1</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header1.Bold" parent="Text.MontserratMedium.Dark.Header1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header1.Small" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_1_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header1.Small.Bold" parent="Text.MontserratMedium.Dark.Header1.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header2.Big" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_2_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header2.Big.Bold" parent="Text.MontserratMedium.Dark.Header2.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header2" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_2</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header2.Bold" parent="Text.MontserratMedium.Dark.Header2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header2.Small" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_2_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header2.Small.Bold" parent="Text.MontserratMedium.Dark.Header2.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header3.Big" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_3_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header3.Big.Bold" parent="Text.MontserratMedium.Dark.Header3.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header3" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_3</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header3.Bold" parent="Text.MontserratMedium.Dark.Header3">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header3.Small" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_header_3_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Header3.Small.Bold" parent="Text.MontserratMedium.Dark.Header3.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Title.Big" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_title_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Title.Big.Bold" parent="Text.MontserratMedium.Dark.Title.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Title" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_title</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Title.Bold" parent="Text.MontserratMedium.Dark.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Normal.Big" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_normal_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Normal.Big.Bold" parent="Text.MontserratMedium.Dark.Normal.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Normal" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Normal.Bold" parent="Text.MontserratMedium.Dark.Normal">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Normal.Small" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_normal_small</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Normal.Small.Bold" parent="Text.MontserratMedium.Dark.Normal.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Small" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Small.Bold" parent="Text.MontserratMedium.Dark.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Tiny" parent="Text.MontserratMedium.Dark">
+        <item name="android:textSize">@dimen/font_tiny</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Dark.Tiny.Bold" parent="Text.MontserratMedium.Dark.Tiny">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light" parent="Text.MontserratMedium">
+        <item name="android:textColor">@color/color_black_20</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header1.Big" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_1_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header1.Big.Bold" parent="Text.MontserratMedium.Light.Header1.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header1" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_1</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header1.Bold" parent="Text.MontserratMedium.Light.Header1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header1.Small" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_1_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header1.Small.Bold" parent="Text.MontserratMedium.Light.Header1.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header2.Big" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_2_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header2.Big.Bold" parent="Text.MontserratMedium.Light.Header2.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header2" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_2</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header2.Bold" parent="Text.MontserratMedium.Light.Header2">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header2.Small" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_2_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header2.Small.Bold" parent="Text.MontserratMedium.Light.Header2.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header3.Big" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_3_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header3.Big.Bold" parent="Text.MontserratMedium.Light.Header3.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header3" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_3</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header3.Bold" parent="Text.MontserratMedium.Light.Header3">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header3.Small" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_header_3_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Header3.Small.Bold" parent="Text.MontserratMedium.Light.Header3.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Title.Big" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_title_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Title.Big.Bold" parent="Text.MontserratMedium.Light.Title.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Title" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_title</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Title.Bold" parent="Text.MontserratMedium.Light.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Normal.Big" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_normal_big</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Normal.Big.Bold" parent="Text.MontserratMedium.Light.Normal.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Normal" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Normal.Bold" parent="Text.MontserratMedium.Light.Normal">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Normal.Small" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_normal_small</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Normal.Small.Bold" parent="Text.MontserratMedium.Light.Normal.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Small" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Small.Bold" parent="Text.MontserratMedium.Light.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Tiny" parent="Text.MontserratMedium.Light">
+        <item name="android:textSize">@dimen/font_tiny</item>
+    </style>
+
+    <style name="Text.MontserratMedium.Light.Tiny.Bold" parent="Text.MontserratMedium.Light.Tiny">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

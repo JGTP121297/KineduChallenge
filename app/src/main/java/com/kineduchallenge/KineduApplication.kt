@@ -19,6 +19,7 @@ open class KineduApplication : Application() {
         val config = RealmConfiguration.Builder()
             .allowWritesOnUiThread(true)
             .allowQueriesOnUiThread(true)
+            .deleteRealmIfMigrationNeeded()
             .modules(DataBase())
             .build()
         Realm.setDefaultConfiguration(config)

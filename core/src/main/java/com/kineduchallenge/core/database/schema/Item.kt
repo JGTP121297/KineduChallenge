@@ -4,12 +4,16 @@ import com.google.gson.annotations.SerializedName
 import io.realm.RealmObject
 
 open class Item : RealmObject() {
-    val id: String
+    val id: Int
         get() {
             resourceURI?.let { uri ->
-                return uri.split("/").last()
+                val idString = uri.split("/").last()
+                return when {
+                    idString.isNotEmpty() -> idString.toInt()
+                    else -> 0
+                }
             }
-            return ""
+            return 0
         }
 
     @SerializedName("resourceURI")

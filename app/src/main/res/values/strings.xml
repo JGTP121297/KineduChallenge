@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KineduChallenge</string>
+
+    <!-- Fragment Characters -->
+    <string name="fragment_characters_comics">Comics</string>
+    <string name="fragment_characters_stories">Stories</string>
 </resources>

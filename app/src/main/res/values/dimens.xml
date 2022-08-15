@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- font -->
+    <dimen name="font_header_1_big">40sp</dimen>
+    <dimen name="font_header_1">36sp</dimen>
+    <dimen name="font_header_1_small">34sp</dimen>
+    <dimen name="font_header_2_big">32sp</dimen>
+    <dimen name="font_header_2">30sp</dimen>
+    <dimen name="font_header_2_small">28sp</dimen>
+    <dimen name="font_header_3_big">26sp</dimen>
+    <dimen name="font_header_3">24sp</dimen>
+    <dimen name="font_header_3_small">22sp</dimen>
+    <dimen name="font_title_big">20sp</dimen>
+    <dimen name="font_title">18sp</dimen>
+    <dimen name="font_normal_big">17sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_normal_small">15sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_tiny">12sp</dimen>
+
+    <!-- spacing -->
+    <dimen name="spacing_large_xx">40dp</dimen>
+    <dimen name="spacing_large_x">32dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_zero">0dp</dimen>
+
+</resources>

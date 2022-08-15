@@ -16,8 +16,8 @@ class RemoteDataSource @Inject constructor(private val mApi: ApiInterface) : Dat
 
     override suspend fun getCharacter(id: Int, forceUpdate: Boolean): Character {
         return withContext(Dispatchers.IO) {
-            val response = mApi.getCharacters(characterId = id)
-            response.body()?.data?.results ?: Character()
+            val response = mApi.getCharacter(characterId = id)
+            response.body()?.data?.results?.first() ?: Character()
         }
     }
 
@@ -31,7 +31,7 @@ class RemoteDataSource @Inject constructor(private val mApi: ApiInterface) : Dat
     override suspend fun getComic(id: Int, forceUpdate: Boolean): Comic {
         return withContext(Dispatchers.IO) {
             val response = mApi.getComic(comicId = id)
-            response.body()?.data?.results ?: Comic()
+            response.body()?.data?.results?.first() ?: Comic()
         }
     }
 
@@ -45,7 +45,7 @@ class RemoteDataSource @Inject constructor(private val mApi: ApiInterface) : Dat
     override suspend fun getEvent(id: Int, forceUpdate: Boolean): Event {
         return withContext(Dispatchers.IO) {
             val response = mApi.getEvent(eventsId = id)
-            response.body()?.data?.results ?: Event()
+            response.body()?.data?.results?.first() ?: Event()
         }
     }
 
@@ -59,7 +59,7 @@ class RemoteDataSource @Inject constructor(private val mApi: ApiInterface) : Dat
     override suspend fun getSeries(id: Int, forceUpdate: Boolean): Series {
         return withContext(Dispatchers.IO) {
             val response = mApi.getSeries(seriesId = id)
-            response.body()?.data?.results ?: Series()
+            response.body()?.data?.results?.first() ?: Series()
         }
     }
 
@@ -73,7 +73,7 @@ class RemoteDataSource @Inject constructor(private val mApi: ApiInterface) : Dat
     override suspend fun getStory(id: Int, forceUpdate: Boolean): Story {
         return withContext(Dispatchers.IO) {
             val response = mApi.getStory(storyId = id)
-            response.body()?.data?.results ?: Story()
+            response.body()?.data?.results?.first() ?: Story()
         }
     }
 

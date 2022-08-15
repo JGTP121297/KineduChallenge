@@ -21,11 +21,12 @@ interface ApiInterface {
     ): Response<ApiResponse<RealmList<Character>>>
 
     @GET("characters/{characterId}")
-    suspend fun getCharacters(
+    suspend fun getCharacter(
+        @Path("characterId") characterId: Int,
         @Query("apikey") apiKey: String = API_PUBLIC_KEY,
         @Query("ts") ts: Int = API_TS,
-        @Path("characterId") characterId: Int
-    ): Response<ApiResponse<Character>>
+        @Query("hash") hash: String = API_HASH
+    ): Response<ApiResponse<RealmList<Character>>>
 
     @GET("comics")
     suspend fun getAllComics(
@@ -37,10 +38,11 @@ interface ApiInterface {
 
     @GET("comics/{comicId}")
     suspend fun getComic(
+        @Path("comicId") comicId: Int,
         @Query("apikey") apiKey: String = API_PUBLIC_KEY,
         @Query("ts") ts: Int = API_TS,
-        @Path("comicId") comicId: Int
-    ): Response<ApiResponse<Comic>>
+        @Query("hash") hash: String = API_HASH
+    ): Response<ApiResponse<RealmList<Comic>>>
 
     @GET("events")
     suspend fun getAllEvents(
@@ -54,8 +56,9 @@ interface ApiInterface {
     suspend fun getEvent(
         @Query("apikey") apiKey: String = API_PUBLIC_KEY,
         @Query("ts") ts: Int = API_TS,
-        @Path("eventsId") eventsId: Int
-    ): Response<ApiResponse<Event>>
+        @Query("hash") hash: String = API_HASH,
+        @Query("eventsId") eventsId: Int
+    ): Response<ApiResponse<RealmList<Event>>>
 
     @GET("series")
     suspend fun getAllSeries(
@@ -69,8 +72,9 @@ interface ApiInterface {
     suspend fun getSeries(
         @Query("apikey") apiKey: String = API_PUBLIC_KEY,
         @Query("ts") ts: Int = API_TS,
-        @Path("seriesId") seriesId: Int
-    ): Response<ApiResponse<Series>>
+        @Query("hash") hash: String = API_HASH,
+        @Query("seriesId") seriesId: Int
+    ): Response<ApiResponse<RealmList<Series>>>
 
     @GET("stories")
     suspend fun getAllStories(
@@ -84,7 +88,8 @@ interface ApiInterface {
     suspend fun getStory(
         @Query("apikey") apiKey: String = API_PUBLIC_KEY,
         @Query("ts") ts: Int = API_TS,
-        @Path("storyId") storyId: Int
-    ): Response<ApiResponse<Story>>
+        @Query("hash") hash: String = API_HASH,
+        @Query("storyId") storyId: Int
+    ): Response<ApiResponse<RealmList<Story>>>
 
 }
